@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead, tfoot{
+            background-color: rgb(73, 68, 68);
+            color: white;
+        }
+
+        th, td{
+            border: 2px solid rgb(67, 63, 63);
+            padding: 10x;
+          
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercícios com Tabelas</h1>
+    <table>
+        <caption>
+            Filmes Favoritos
+        </caption>
+        <thead>
+            <tr>
+               <th scope="col">Grupos</th>
+               <th scope="col">Nomes</th>
+               <th colspan="3" scope="colgroup">Filmes</th>
+            </tr>
+        </thead>
+            <tfoot>
+                <tr>
+                    <th colspan="4" scope="row">Total</th>
+                    <td>1000</td>
+                </tr>
+            </tfoot>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+
+            </tr>
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Carla Dias</td>
+                <td>Titanic</td>
+                <td>Interestelar</td>
+                <td>Matrix</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td>Bruno Mendonça</td>
+                <td>Intocáveis</td>
+                <td>Amnésia</td>
+                <td>Gladiador</td>
+            </tr>
+            <tr>
+                <td>Carlos Alberto</td>
+                <td>Clube da Luta</td>
+                <td>O Poderoso Chefão</td>
+                <td>Forrest Gump</td>
+            </tr>
+            <tr>
+                <td>Daniel Oliveira</td>
+                <td>Star Wars</td>
+                <td>O Senhor dos Anéis</td>
+                <td>Avatar</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
